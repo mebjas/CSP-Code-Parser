@@ -25,7 +25,7 @@ function parseNode(node) {
 			if (node.className == '')
 				node.className = classname;
 			else {
-				if (node.className.indexOf(__idprefix) != -1) {
+				if (node.className.indexOf(_idprefix) != -1) {
 					// More than one listener in one node
 					var r = new RegExp(_idprefix +"[0-9]{1,}");
 					classname = r.exec(node.className);
